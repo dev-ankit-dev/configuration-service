@@ -12,7 +12,7 @@ public class TestController {
 	@RequestMapping(value = "/employee", method = RequestMethod.GET)
 	public Employee firstPage() {
 
-		
+		System.out.println("firstPage method start");
 		 
 		Employee emp = new Employee();
 		emp.setName("emp1");
@@ -20,7 +20,7 @@ public class TestController {
 		emp.setEmpId("1");
 		emp.setSalary(3000);
 		
-	  
+		System.out.println("firstPage method end");
 
 		return emp;
 	}
